@@ -317,7 +317,7 @@ function App() {
           </option>
         ))}
       </select>
-
+	  <div>
       <div id="state-name">{state}</div>
       <div id="state-description">{selState?.description}</div>
 
@@ -326,6 +326,7 @@ function App() {
 
       <div id="landmark-name">{landmark}</div>
       <div id="landmark-descriptipm">{selLandMark?.description}</div>
+	  </div>
     </>
   );
 }
