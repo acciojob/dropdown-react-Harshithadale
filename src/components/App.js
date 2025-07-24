@@ -291,7 +291,7 @@ function App() {
 
   return (
     <>
-      <select onChange={handleStateChange} value={state || ""}>
+      <select onChange={handleStateChange} value={state || ""} id="state">
         <option value="">--Select State Option--</option>
         {states.map((item, ind) => (
           <option value={item.name} key={ind}>
@@ -300,7 +300,7 @@ function App() {
         ))}
       </select>
 
-      <select onChange={handleCityChange} value={city || ""} disabled={!cities.length}>
+      <select onChange={handleCityChange} value={city || ""} id="city">
         <option value="">--Select City Option--</option>
         {cities.map((item, ind) => (
           <option value={item.name} key={ind}>
@@ -309,7 +309,7 @@ function App() {
         ))}
       </select>
 
-      <select onChange={handleLandMarkChange} value={landmark || ""} disabled={!landmarks.length}>
+      <select onChange={handleLandMarkChange} value={landmark || ""} id="landmark">
         <option value="">--Select Landmark Option--</option>
         {landmarks.map((item, ind) => (
           <option value={item.name} key={ind}>
