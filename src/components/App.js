@@ -318,13 +318,13 @@ function App() {
         ))}
       </select>
 	  <div>
-      <div id="state-name">{state}</div>
+      <div id="state-title">{state}</div>
       <div id="state-description">{selState?.description}</div>
 
-      <div id="city-name">{city}</div>
+      <div id="city-title">{city}</div>
       <div id="city-description">{selCity?.description}</div>
 
-      <div id="landmark-name">{landmark}</div>
+      <div id="landmark-title">{landmark}</div>
       <div id="landmark-descriptipm">{selLandMark?.description}</div>
 	  </div>
     </>
